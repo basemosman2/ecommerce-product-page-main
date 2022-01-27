@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style/css/normalize.css">
+  <link rel="stylesheet" href="style/css/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="overlayer-img">
+      <div class="imgsContainer">
+        <div class="closeIcon"><img src="images/icon-close.svg" alt="close"></div>
+        <div class="bigImg">
+            <div class="previousIcon arrowIcon" data-previous="-1">
+              <img src="images/icon-previous.svg" alt="previousIcon">
+            </div>
+            <div class="bigImagSelected">
+              <img src="images/image-product-1.jpg" alt="item1">
+            </div>
+            <div class="nextIcon arrowIcon" data-next="+1">
+              <img src="images/icon-next.svg" alt="previousIcon">
+            </div>
+        </div>
+        <div class="overlayThumbnailImg-box">
+          <ul>
+            <li class="active"><img src="images/image-product-1-thumbnail.jpg" data-name='product-1' alt="item1"></li>
+            <li><img src="images/image-product-2-thumbnail.jpg" data-name='product-2' alt="item2"></li>
+            <li><img src="images/image-product-3-thumbnail.jpg" data-name='product-3' alt="item3"></li>
+            <li><img src="images/image-product-4-thumbnail.jpg" data-name='product-4' alt="item4"></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  <header>
+      <div class="menuIcon">
+        <img src="images/icon-menu.svg" alt="">
+      </div>
+      <div class="logo">
+        <a href="#"><img src="images/logo.svg" alt="logo"></a>
+      </div>
+      <ul class="navbar">
+        <li class="menuClose">
+          <img src="images/icon-close.svg" alt="">
+        </li>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    <div class="cartIcon-box">
+      <div class="cartItemNum"></div>
+      <img class="cartIcon" src="images/icon-cart.svg" alt="cartIcon">
+    </div>
+    <div class="avatar-box">
+      <img src="images/image-avatar.png" alt="avatar">
+    </div>
+    <div class="cart-box">
+      <h3>Cart</h3>
+      <div class="cartItems-box">
+        <span class="emptyCart">Your Cart is empty</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="images-product-box">
+        <div class="mainImg-box">
+          <div class="previousIcon arrowIcon" id="mainPreviousIcon">
+            <img src="images/icon-previous.svg" alt="previousIcon">
+          </div>
+          <div class="imgProductContainer">
+            <img src="images/image-product-1.jpg" alt="item1">
+          </div>
+          <div class="nextIcon arrowIcon" id="mainNextIcon">
+            <img src="images/icon-next.svg" alt="previousIcon">
+          </div>
+        </div>
+        <div class="thumbnailImg-box">
+          <ul>
+            <li class="active"><img src="images/image-product-1-thumbnail.jpg" data-name='product-1' alt="item1"></li>
+            <li><img src="images/image-product-2-thumbnail.jpg" data-name='product-2' alt="item2"></li>
+            <li><img src="images/image-product-3-thumbnail.jpg" data-name='product-3' alt="item3"></li>
+            <li><img src="images/image-product-4-thumbnail.jpg" data-name='product-4' alt="item4"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mainContent">
+        <div class="contentInfo">
+          <h2>Sneaker Company</h2>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+        </div>
+        <div class="itemPrice-box">
+          <div class="Item-Price">
+            <div class="mainPrice">$125.00</div>
+            <div class="itemDiscount">50%</div>
+          </div>
+          <div class="previous-price">$250.00</div>
+        </div>
+        <div class="itemsAdd-box">
+          <div class="item-count">
+            <ul>
+              <li class="decreaseItem"><img src="images/icon-minus.svg" alt="minus"></li>
+              <li class="itemNo">1</li>
+              <li class="increaseItem"><img src="images/icon-plus.svg" alt="plus"></li>
+            </ul>
+          </div>
+          <div class="btn-box addToCart">
+            <img src="images/icon-cart.svg" alt="cart">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="main.js"></script>
+</body>
+</html>
